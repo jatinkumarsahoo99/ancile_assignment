@@ -1,0 +1,38 @@
+name: untitled1
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.6
+  get: 4.6.6
+  objectbox:
+  objectbox_flutter_libs: any
+  intl:
+  dio:
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^3.0.0
+  build_runner:
+  flutter_launcher_icons:
+  objectbox_generator: any
+  test:
+  flutter_test: 
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+
+
+flutter: 
+  uses-material-design: true
+  assets:
+    - assets/images/
+
