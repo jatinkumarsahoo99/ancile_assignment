@@ -7,14 +7,14 @@
 
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:untitled1/app/modules/home/edit_dialog.dart';
+import 'package:untitled1/app/modules/home/views/home_view.dart';
 
 
 void main() {
   testWidgets('Golden Test', (WidgetTester tester) async {
-   await tester.pumpWidget( EditUserDialog(onSave: (String name, int age) {  },));
+   await tester.pumpWidget( HomeView());
    
-   expectLater(find.byType(EditUserDialog), matchesGoldenFile("my_widget.png"));
+   expectLater(find.byType(HomeView), matchesGoldenFile("my_widget.png"));
 
   });
 }
