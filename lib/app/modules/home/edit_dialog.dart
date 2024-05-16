@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class EditUserDialog extends StatefulWidget {
 
-  Function(String name,int age) onSave;
+  final Function(String name,int age) onSave;
 
-   EditUserDialog({Key? key,required this.onSave}) : super(key: key);
+   const EditUserDialog({super.key,required this.onSave});
 
   @override
   _EditUserDialogState createState() => _EditUserDialogState();
